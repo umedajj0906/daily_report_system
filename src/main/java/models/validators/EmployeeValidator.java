@@ -33,7 +33,7 @@ public class EmployeeValidator {
 
 
         //氏名のチェック
-        String nameError = validateName(service, ev.getName());
+        String nameError = validateName(ev.getName());
         if (!nameError.equals("")) {
             errors.add(nameError);
         }
